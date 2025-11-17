@@ -1,0 +1,20 @@
+// src/styles/btn.scss
+@import "./variables";
+
+.btn {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+  padding: 8px 14px;
+  background: $main-color;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.2s;
+
+  &:hover {
+    background: darken($main-color, 10%);
+  }
+  &.del{
+    background-color: red;
+  }
+}

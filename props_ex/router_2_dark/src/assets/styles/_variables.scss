@@ -1,0 +1,43 @@
+// 색상
+$color-bg-light: #f9f9f9;
+$color-bg-dark: #121212;
+$color-text-light: #222;
+$color-text-dark: #f9f9f9;
+
+// 버튼
+@mixin btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 4px;
+  color: #fff;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// 카드
+@mixin card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+// 배너
+@mixin banner-style {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}

@@ -1,0 +1,17 @@
+// 색상 변수
+$main-color: #3498db;
+$danger-color: #e74c3c;
+
+// 기본 버튼 스타일
+@mixin button-style($bg-color) {
+  background: $bg-color;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($bg-color, 10%);
+  }
+}
